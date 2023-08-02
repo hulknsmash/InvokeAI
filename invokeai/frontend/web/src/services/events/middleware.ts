@@ -20,6 +20,7 @@ export const socketMiddleware = () => {
     timeout: 60000,
     path: '/ws/socket.io',
     autoConnect: false, // achtung! removing this breaks the dynamic middleware
+    withCredentials: true,
   };
 
   // if building in package mode, replace socket url with open api base url minus the http protocol
@@ -40,7 +41,7 @@ export const socketMiddleware = () => {
   }
 
   const socket: Socket<ServerToClientEvents, ClientToServerEvents> = io(
-    socketUrl,
+    // socketUrl,
     socketOptions
   );
 
