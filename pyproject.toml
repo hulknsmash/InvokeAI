@@ -81,7 +81,7 @@ dependencies = [
   "scikit-image~=0.21.0",
   "send2trash",
   "test-tube~=0.7.5",
-  "torch~=2.0.1",
+  "torch~=2.0.0",
   "torchvision~=0.15.2",
   "torchmetrics~=0.11.0",
   "torchsde~=0.2.5",
