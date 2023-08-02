@@ -27,7 +27,7 @@ export const socketMiddleware = () => {
     const baseUrl = $baseUrl.get();
     if (baseUrl) {
       //eslint-disable-next-line
-      socketUrl = baseUrl.replace(/^https?\:\/\//i, '');
+      socketUrl = baseUrl;  // .replace(/^https?\:\/\//i, '');
     }
 
     const authToken = $authToken.get();
